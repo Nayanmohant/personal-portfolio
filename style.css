@@ -1,0 +1,312 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #000000; 
+    color: #ffffff; /* Default white text */
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #343a40; 
+    height: 100px;
+}
+.navbar-brand, .navbar-nav .nav-link {
+    color:white ; 
+}
+.navbar-nav .nav-link:hover {
+    color: #a31090 ; /* Slight hover effect */
+}
+
+/* Home Section Styles */
+#home {
+    background-image:url("https://img.freepik.com/premium-photo/laptop-with-cup-coffee-cup-coffee-table_605423-113029.jpg") ; /* Primary Bootstrap blue */
+    background-repeat: no-repeat;
+    background-size: cover; /* Ensures the image covers the entire section */
+    background-position: center; /* Centers the image */
+    background-attachment: fixed; /* Optional: Parallax effect (image stays fixed while scrolling) */
+    text-align: center;
+    color: #fff;
+    padding: 100px 0;
+    height:600px;
+}
+#home h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+#home p {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+/* About Section Styles */
+#about {
+    background-color:#111111; /* Dark background color */
+    color:white; /* White text color */
+    padding: 60px 0;
+    text-align: center;
+}
+#about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #f8f9fa;
+}
+#about p {
+    font-size: 1.1rem;
+    margin-bottom: 50px;
+    color: #f8f9fa;
+}
+
+.education-section {
+    margin-bottom: 40px;
+}
+.education-title {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #ffffff; /* White text */
+}
+
+.education-item {
+    background-color: #222222; /* Dark background for education cards */
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+}
+
+.education-item h5 {
+    font-size: 1.4rem;
+    margin-bottom: 5px;
+    color: #ffffff;
+}
+
+.education-item p {
+    font-size: 1rem;
+    color: #cccccc; /* Light color for text */
+}
+
+/* Skills Section */
+.skills-section {
+    margin-bottom: 40px;
+}
+
+.skills-title {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+/* Skill Bars */
+.skill-bar {
+    margin-bottom: 15px;
+}
+
+.skill-bar h5 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.progress {
+    height: 20px;
+    background-color: #333333; /* Darker background for progress bar */
+    border-radius: 10px;
+}
+
+.progress-bar {
+    background-color: #007bff; /* Primary color for progress bar */
+    text-align: left;
+    padding-left: 10px;
+    line-height: 20px; /* Align text vertically */
+    color: #ffffff;
+}
+.card {
+    background-color: #495057; /* Darker card background */
+    border: none; /* Remove the card border */
+    border-radius: 10px; /* Round the corners */
+    color:black(184, 26, 26); /* White text on the card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+.card:hover{
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
+
+}
+
+.card h5 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: black;
+}
+.card-body{
+    padding:30px;
+    
+}
+/* Projects Section Styles */
+#projects {
+    background-color: #111111; /* Dark background for contrast */
+    color: #ffffff; /* White text */
+    padding: 60px 0;
+    text-align: center;
+
+}
+#projects h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #ffffff;
+}
+.project-card {
+    background-color: #222222; /* Darker gray background */
+    border: none; /* No border */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 30px;
+}
+
+/* Hover effect for project cards */
+.project-card:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5); /* Stronger shadow */
+}
+
+/* Image inside project card */
+
+
+/* Card Body */
+.project-card-body {
+    padding: 20px;
+    color: #ffffff;
+}
+
+.project-card-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.project-card-text {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: black; /* Lighter text for descriptions */
+}
+
+/* Call-to-action buttons */
+.project-card .btn {
+    background-color: #343a40; /* Primary blue button */
+    color: #ffffff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.project-card .btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Animations (fade in for project cards) */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.project-card {
+    animation: fadeInUp 0.5s ease forwards;
+}
+
+/* Add space between cards */
+.project-grid .col-md-4 {
+    margin-bottom: 30px;
+}
+
+
+/* Contact Section Styles */
+#contact {
+    background-color: #111111;
+    padding: 60px 0;
+}
+#contact h1{
+    color: white;
+    justify-content: center;
+    align-items: center;
+    margin-left: 980px;
+}
+#contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+form .form-control {
+    border-radius: 5px;
+    box-shadow: none;
+    border-color: #ced4da;
+}
+form .form-control:focus {
+    box-shadow: 0px 0px 8px rgba(0, 123, 255, 0.25);
+    border-color: #007bff;
+}
+form button {
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+form button:hover {
+    background-color: #0056b3;
+}
+
+
+.socialicons a {
+    color: #ffffff; /* Default icon color */
+    font-size: 3rem; /* Large icon size */
+    margin: 0 15px;
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+/* Hover effects for social icons */
+.socialicons a:hover {
+    color: #007bff; /* Blue hover color for LinkedIn */
+    transform: scale(1.2); /* Slight zoom on hover */
+}
+
+/* Specific colors for GitHub and LinkedIn */
+.socialicons a.github:hover {
+    color: #0077b5; /* Dark gray hover color for GitHub */
+}
+
+.socialicons a.linkedin:hover {
+    color: #0077b5; /* Blue hover color for LinkedIn */
+}
+/* Social Icons */
+.social-icons a {
+    color: #007bff;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+    
+}
+.social-icons a:hover {
+    color: #0056b3;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 20px 0;
+}
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
